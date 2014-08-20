@@ -1,7 +1,7 @@
 FROM dock0/service
 MAINTAINER Jon Chen <bsd@voltaire.sh>
 
-EXPOSE 69
+EXPOSE 69/udp
 
 RUN pacman -Syu --needed --noconfirm tftp-hpa
 
