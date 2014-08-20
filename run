@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /usr/bin/in.tftpd --listen --forground --verbose --secure /srv/tftp 2>&1
