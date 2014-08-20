@@ -5,9 +5,9 @@ EXPOSE 69
 
 RUN pacman -Syu --needed --noconfirm tftp-hpa
 
-ADD default /srv/tftp/default
+ADD tftp/default /srv/tftp/default
 
-ADD F1.msg /srv/tftp/F1.msg
+ADD tftp/F1.msg /srv/tftp/F1.msg
 
 ADD http://stable.release.core-os.net/amd64-usr/current/coreos_production_pxe.vmlinuz /srv/tftp/stable/
 ADD http://stable.release.core-os.net/amd64-usr/current/coreos_production_pxe_image.cpio.gz /srv/tftp/stable/
