@@ -1,6 +1,8 @@
 FROM dock0/service
 MAINTAINER Jon Chen <bsd@voltaire.sh>
 
+EXPOSE 69
+
 RUN pacman -Syu --needed --noconfirm tftp-hpa
 
 ADD pxelinux.cfg /srv/tftp/pxelinux.cfg/default
