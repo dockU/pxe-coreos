@@ -1,4 +1,4 @@
-default coreos
+default coreos_stable
 console 1
 prompt 1
 timeout 200
